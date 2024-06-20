@@ -1,4 +1,4 @@
-import { defineField, defineType } from 'sanity';
+import {defineField, defineType} from 'sanity'
 
 export default defineType({
   name: 'home',
@@ -24,7 +24,7 @@ export default defineType({
       name: 'aboutContent',
       title: 'About Content',
       type: 'array',
-      of: [{ type: 'block' }],
+      of: [{type: 'block'}],
     }),
     defineField({
       name: 'cooperativeTitle',
@@ -35,7 +35,7 @@ export default defineType({
       name: 'cooperativeContent',
       title: 'Co-operative Content',
       type: 'array',
-      of: [{ type: 'block' }],
+      of: [{type: 'block'}],
     }),
     defineField({
       name: 'galleryTitle',
@@ -46,7 +46,18 @@ export default defineType({
       name: 'galleryImages',
       title: 'Gallery Images',
       type: 'array',
-      of: [{ type: 'image', options: { hotspot: true } }],
+      of: [{type: 'image', options: {hotspot: true}}],
+    }),
+    defineField({
+      name: 'chibahTitle',
+      title: 'Chibah Title',
+      type: 'string',
+    }),
+    defineField({
+      name: 'chibahContent',
+      title: 'Chibah Content',
+      type: 'array',
+      of: [{type: 'block'}],
     }),
   ],
-});
+})
